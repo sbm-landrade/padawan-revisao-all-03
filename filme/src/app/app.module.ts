@@ -1,3 +1,4 @@
+//Objetivo: declarar todos os componentes, módulos, e serviços que serão usados
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 

@@ -1,3 +1,4 @@
+//Componente responsável por gerenciar a lógica de exibição dos filmes. Contém o código para interagir com o serviço de filmes e atualizar o template com os dados recebidos.
 import { Component, OnInit } from '@angular/core';
 import { FilmeService } from '../filme.service';
 import { Filme } from '../filme.model';

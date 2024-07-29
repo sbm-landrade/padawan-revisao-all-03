@@ -1,3 +1,5 @@
+//Serviço responsável por fazer chamadas HTTP para a API backend.
+//Contém métodos para realizar operações CRUD (Create, Read, Update, Delete).
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
