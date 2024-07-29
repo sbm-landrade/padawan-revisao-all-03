@@ -1,0 +1,22 @@
+<!--Define a estrutura HTML para exibir a lista de filmes-->
+<h1>Lista de Filmes</h1>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Título</th>
+    <th>Diretor</th>
+    <th>Gênero</th>
+    <th>Ano</th>
+    <th>Ações</th>
+  </tr>
+  <tr *ngFor="let filme of filmes">
+    <td>{{ filme.id }}</td>
+    <td>{{ filme.titulo }}</td>
+    <td>{{ filme.diretor }}</td>
+    <td>{{ filme.genero }}</td>
+    <td>{{ filme.ano }}</td>
+    <td>
+      <!-- Botões para editar e deletar -->
+    </td>
+  </tr>
+</table>
