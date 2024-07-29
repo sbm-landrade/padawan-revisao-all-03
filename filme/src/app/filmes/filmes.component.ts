@@ -10,6 +10,7 @@ import { Filme } from '../filme.model';
 })
 export class FilmesComponent implements OnInit {
   filmes: Filme[] = [];
+  searchTerm: string = '';
 
   constructor(private filmeService: FilmeService) { }
 

@@ -1,5 +1,9 @@
 <!--Define a estrutura HTML para exibir a lista de filmes-->
 <h1>Lista de Filmes</h1>
+
+<!-- Campo de busca -->
+<input type="text" [(ngModel)]="searchTerm" placeholder="Buscar filme..." />
+
 <table>
   <tr>
     <th>ID</th>
@@ -9,7 +13,7 @@
     <th>Ano</th>
     <th>Ações</th>
   </tr>
-  <tr *ngFor="let filme of filmes">
+  <tr *ngFor="let filme of filmes | filter:searchTerm">
     <td>{{ filme.id }}</td>
     <td>{{ filme.titulo }}</td>
     <td>{{ filme.diretor }}</td>
